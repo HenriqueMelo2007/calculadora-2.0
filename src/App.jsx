@@ -2,13 +2,15 @@ import { useContext } from "react"
 import { Btn } from "./components/button/btn"
 import { BtnOp } from "./components/buttonop/btnop"
 import { Contexto } from "./context/contexto"
+import { BtnIg } from "./components/buttonig/buttonig"
 
 export function App() {
 
   const { estado } = useContext(Contexto)
 
-  const listaValores = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '.', '=']
+  const listaValores = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '.']
   const listaOperacoes = ['+', '-', '*', '/']
+  const igualdade = '='
   
   return (
 
@@ -23,6 +25,8 @@ export function App() {
         {listaValores.map( (item) => {
            return <Btn key={item} valor={item}></Btn>
         } )}
+
+        <BtnIg valor={igualdade}></BtnIg>
 
         {listaOperacoes.map( (item) => {
            return <BtnOp key={item} valor={item}></BtnOp>
