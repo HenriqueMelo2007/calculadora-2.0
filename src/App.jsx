@@ -1,12 +1,14 @@
 import { useContext } from "react"
 import { Btn } from "./components/button/btn"
+import { BtnOp } from "./components/buttonop/btnop"
 import { Contexto } from "./context/contexto"
 
 export function App() {
 
   const { estado } = useContext(Contexto)
 
-  const listaValores = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '.', '=', '+', '-', '*', '/']
+  const listaValores = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '.', '=']
+  const listaOperacoes = ['+', '-', '*', '/']
   
   return (
 
@@ -20,6 +22,10 @@ export function App() {
 
         {listaValores.map( (item) => {
            return <Btn key={item} valor={item}></Btn>
+        } )}
+
+        {listaOperacoes.map( (item) => {
+           return <BtnOp key={item} valor={item}></BtnOp>
         } )}
 
       </div>

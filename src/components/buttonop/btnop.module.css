@@ -1,0 +1,11 @@
+.button {
+  font-family: 'Source Code Pro', monospace;
+  font-size: 25px;
+  border: 1px solid var(--color-border);
+  background-color: transparent;
+  color: var(--color-operadores);
+}
+
+.button:hover {
+  cursor: pointer;
+}
