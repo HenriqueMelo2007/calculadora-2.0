@@ -8,6 +8,6 @@ export function BtnOp({ valor}) {
   const { atualizarEstado } = useContext(Contexto)
 
   return (
-    <button onClick={() => atualizarEstado(valor)}  className={styles.button}>{valor}</button>
+    <button onClick={() => atualizarEstado(` ${valor} `)}  className={styles.button}>{valor}</button>
   )
 }
