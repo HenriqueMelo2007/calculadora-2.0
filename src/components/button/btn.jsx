@@ -5,10 +5,9 @@ import { useContext } from 'react'
 
 export function Btn({ valor}) {
 
-  const { estado, atualizarEstado } = useContext(Contexto)
+  const { atualizarEstado } = useContext(Contexto)
 
   return (
-
-    <button className={styles.button}>{valor}</button>
+    <button onClick={() => atualizarEstado(valor)}  className={styles.button}>{valor}</button>
   )
 }
