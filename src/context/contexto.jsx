@@ -9,9 +9,15 @@ export function ProvedorContexto ( { children }) {
 
   const atualizarEstado = (novoEstado) => setEstado(prevEstado => prevEstado + novoEstado)
 
+  const calcularEstado = (estado) => {
+    const resultado = eval(estado)
+    setEstado(resultado)
+  }
+  
   const valorContexto = {
     estado,
     atualizarEstado,
+    calcularEstado,
   }
 
   return (

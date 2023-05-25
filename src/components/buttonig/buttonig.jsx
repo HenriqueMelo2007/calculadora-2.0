@@ -5,9 +5,9 @@ import { useContext } from 'react'
 
 export function BtnIg({ valor}) {
 
-  const { atualizarEstado } = useContext(Contexto)
+  const { estado, calcularEstado } = useContext(Contexto)
 
   return (
-    <button onClick={() => atualizarEstado(valor)}  className={styles.button}>{valor}</button>
+    <button onClick={() => calcularEstado(estado)}  className={styles.button}>{valor}</button>
   )
 }
