@@ -1,11 +1,11 @@
 # Calculator-2.0
-### Welcome to the Calculator repository
+# Welcome to the Calculator repository
 
-#### Project information:
+### Project information:
 
 A calculator made to perform the four basic operations. Design made using the colors of the Dracula theme, popular among developers.
 
-#### How it works?
+## How it works?
 
 The application is based on three pillars: state, updateState( ), calculateState( ). All stored within a context that can be accessed globally (by the entire application).
 
