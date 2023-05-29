@@ -13,7 +13,7 @@ The application is based on three pillars: state, updateState( ), calculateState
 
 - updateState: Used by all button components except equality. Each button when touched can use this function to modify the state, adding its respective value to it.
 
-- calculateState
+- calculateState: This function is used by the equals button, which, using the native JavaScrpt function "eval( )", computes the state value and executes it as if it were a JS code. When calculating, replaces the old value with the result.
 
 ## Layout:
 
